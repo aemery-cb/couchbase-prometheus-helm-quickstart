@@ -22,10 +22,10 @@ Sometimes you just want a Couchbase Sever cluster with Monitoring via Prometheus
     `helm repo update`
 4. Install Couhbase Autonomous Operator 
     
-    `helm install <my-release> —values couchbase.yml couchbase/couchbase-operator`
+    `helm install couchbase —values couchbase.yml couchbase/couchbase-operator`
 5. Install Kube Prometheus Stack
     
-    `helm install <my-release> —values prometheus.yml prometheus-community/kube-prometheus-stack`
+    `helm install prometheus —values prometheus.yml prometheus-community/kube-prometheus-stack`
 6. Create the ServiceMonitor required
     
     `kubectl apply -f monitor.yml`
