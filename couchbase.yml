@@ -1,0 +1,4 @@
+cluster:
+  monitoring:
+    prometheus:
+      enabled: true
