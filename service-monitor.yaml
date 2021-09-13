@@ -2,7 +2,6 @@ apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 metadata:
   name: couchbase
-  namespace: default
   labels:
     app: couchbase
     release: prometheus
@@ -10,9 +9,6 @@ spec:
   endpoints:
   - port: metrics
     interval: 5s
-  namespaceSelector:
-    matchNames:
-    - default
   selector:
     matchLabels:
       app: couchbase

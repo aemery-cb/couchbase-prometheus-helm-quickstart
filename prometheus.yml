@@ -7,9 +7,6 @@ prometheus:
         endpoints:
           - port: metrics
             interval: 5s
-        namespaceSelector:
-          matchNames:
-            - default
         selector:
           matchLabels:
             app: couchbase
